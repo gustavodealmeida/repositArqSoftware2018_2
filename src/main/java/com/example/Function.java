@@ -14,8 +14,7 @@ public class Function {
         @HttpTrigger(
             name = "createfuncionariorest",
             methods = {HttpMethod.POST}, 
-            route = "funcionario",
-            authLevel = AuthorizationLevel.ANONYMOUS
+            route = "funcionario"
         )
         Funcionario funcionario){
 
@@ -27,8 +26,7 @@ public class Function {
         @HttpTrigger(
             name = "readfuncionariorest",
             methods = {HttpMethod.GET},
-            route = "funcionario",
-            authLevel = AuthorizationLevel.ANONYMOUS
+            route = "funcionario"
         ) 
         String x) {
             
